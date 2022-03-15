@@ -8,7 +8,7 @@ D-Bus is to communicate with the system or applications. Said that...
 
 ## How to communicate? (applications only here)
 
-Although the whole think comes with the term "Bus" in, the Bus is not involved
+Although the whole thing comes with the term "Bus" in, the Bus is not involved
 here, as the following examples are all a one-to-one communication. (Strictly
 viewed, the communication still goes 'through' the bus, so speaking technically
 this is incorrect, but from a user perspective you don't have to care of)
@@ -21,12 +21,12 @@ to invoke (i.e. execute, also: "trigger" or "call").
 
 ### Services
 
-Most applications offer so called Services. You might think of this as the plate
-on a door of a room, you go through and enter a worlds of Objects (in cabinets)
-and their Interfaces . These Interfaces have Properties and Methods (buttons
-to push and displays to read).
+Most applications offer many so called Services. You might think of this as the
+plate on a door of a room, you go through and enter a worlds of Objects (in 
+cabinets) and their Interfaces . These Interfaces have Properties and Methods
+(buttons to push and displays to read).
 
-Note: Service names are mainly made of characters, digits and dots (!).
+*Note: Service names are mainly made of characters, digits and dots (!).*
 
 Services are tight to their creating process. So some Appplications might offer
 there (basic) Service name extended by a dash and their process id. (Process
@@ -37,9 +37,9 @@ ids might be obtaines with pgrep(1).)
 Objects offer Interfaces.
 
 Objects pathes are mainly made of characters, digits, underscores and slashes (!).
-(See the distinction to the naming of Services, that contains dots). So basicly
-Object Pathes resemble Linux filesystem pathes, as they always start with a
-slash ('/').
+(See the distinction to the naming of Services, that uses dots as delimizers).
+So basicly Object Pathes resemble Linux filesystem pathes, as they always start
+with a slash ('/').
 
 ### Interfaces
 
@@ -51,8 +51,9 @@ junction. The junction is a single dot.
 
 ### Properties and Methods
 
-Properties and Methods resamble the dot notation, that Services do. They actualy
-might even copy the containing Service Name into it. This is particulary confusing.
+Properties and Methods resemble the dot notation, that Services do. They actualy
+might even copy the containing Service Name into it. This is particulary confusing
+to everyone new to D-Bus.
 
 ### Interfaces,  Properties and Methods
 
